@@ -23,13 +23,7 @@ export default function NavigationHeader() {
             <ul className={styles.HeaderRemainingItems}>
                 <li><i className="fa-solid fa-clipboard iconSize"></i><span>Đơn hàng</span></li>
                 <li><i className="fa-solid fa-cart-shopping iconSize"></i><span>Giỏ hàng</span></li>
-                <li id='User'>
-                    <i className="fa-solid fa-user iconSize"></i><span>User</span>
-                    <ul>
-                        <li>Đăng nhập</li>
-                        <li>Đăng ký</li>
-                    </ul>
-                </li>
+                <li><i className="fa-solid fa-user iconSize"></i><span>Đăng nhập</span></li>
             </ul>
         </div>
     )
