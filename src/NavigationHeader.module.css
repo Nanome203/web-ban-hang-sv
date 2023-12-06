@@ -8,10 +8,15 @@
     background-color: deepskyblue;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: space-between;
+}
+.HeaderPart {
+   height: 13vh;
+   display: flex;
+   align-items: center;
 }
 .Icon {
-    width: 80px;
+    width: 87px;
     height: 70px;
     margin: 30px;
 }
@@ -24,11 +29,11 @@
 }
  .SearchBarContainer {
     display: flex;
-    width: 40%;
+    width: 50%;
     height: 50px;
     background-color: white;
     border-radius: 10px;
-    margin-left: 100px;
+    margin-left: 15%;
  }
 
  .SearchBar {
@@ -52,15 +57,16 @@
  }
  .HeaderRemainingItems{
     margin-left: 20px;
-    width: 30%;
+    width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     list-style: none;
  }
  .HeaderRemainingItems li{
+   width: 40%;
    height: 80%;
    box-sizing: border-box;
    display: flex;
