@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <NavigationHeader />
       <SideBar />
+      <h2>Phần trình bày banner + sản phẩm</h2>
     </div>
   );
 }
