@@ -18,7 +18,7 @@ export default function NavigationHeader() {
                 <a href='#Home'><img className={styles.Icon}
                     src='https://cdn.haitrieu.com/wp-content/uploads/2021/10/Logo-DH-Cong-Nghe-Thong-Tin-UIT.png'
                     alt='UIT Icon' /></a>
-                <p className={styles.ShopName}>UIT SHOP</p>
+                <a href='#Home'><p className={styles.ShopName}>UIT SHOP</p></a>
                 <SearchBar />
             </div>
             <div className={styles.HeaderPart} style={{ flex: 1, }}>
