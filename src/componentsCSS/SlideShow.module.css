@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slideContainer {
+    box-sizing: border-box;
+    border: solid black 1px;
+    width: 90%;
+    height: 400px;
+    margin: 20px 50px;
+}

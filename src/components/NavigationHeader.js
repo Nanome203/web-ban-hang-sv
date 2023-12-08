@@ -15,9 +15,9 @@ export default function NavigationHeader() {
     return (
         <div className={styles.Header} >
             <div className={styles.HeaderPart} style={{ flex: 2, justifyContent: 'flex-start' }} >
-                <img className={styles.Icon}
+                <a href='#Home'><img className={styles.Icon}
                     src='https://cdn.haitrieu.com/wp-content/uploads/2021/10/Logo-DH-Cong-Nghe-Thong-Tin-UIT.png'
-                    alt='UIT Icon' />
+                    alt='UIT Icon' /></a>
                 <p className={styles.ShopName}>UIT SHOP</p>
                 <SearchBar />
             </div>

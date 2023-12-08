@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.ProductsContainer {
+    box-sizing: border-box;
+    width: 90%;
+    height: 50%;
+    margin: 20px 50px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+
+}
