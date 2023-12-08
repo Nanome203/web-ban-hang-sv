@@ -23,9 +23,9 @@ export default function NavigationHeader() {
             </div>
             <div className={styles.HeaderPart} style={{ flex: 1, }}>
                 <ul className={styles.HeaderRemainingItems}>
-                    <li><i className="fa-solid fa-clipboard iconSize"></i><span>Đơn hàng</span></li>
-                    <li><i className="fa-solid fa-cart-shopping iconSize"></i><span>Giỏ hàng</span></li>
-                    <li><i className="fa-solid fa-user iconSize"></i><span>Đăng nhập</span></li>
+                    <li><a href='#'><i className={`fa-solid fa-clipboard ${styles.iconSize}`}></i><span>Đơn hàng</span></a></li>
+                    <li><a href='#'><i className={`fa-solid fa-cart-shopping ${styles.iconSize}`}></i><span>Giỏ hàng</span></a></li>
+                    <li><a href='#'><i className={`fa-solid fa-user ${styles.iconSize}`}></i><span>Đăng nhập</span></a></li>
                 </ul>
             </div>
         </div>

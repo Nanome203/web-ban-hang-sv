@@ -1,96 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;0,900;1,800;1,900&display=swap');
+
 * {
-    padding: 0;
-    margin: 0;
+   padding: 0;
+   margin: 0;
 }
+
+.iconSize {
+   font-size: 20px;
+}
+
 .Header {
-    height: 10 vh;
-    background-color: deepskyblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   height: 10 vh;
+   background-color: deepskyblue;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
+
 .HeaderPart {
    height: 10vh;
    display: flex;
    align-items: center;
+   margin-right: 10px;
 }
-.Icon {
-    width: 87px;
-    height: 70px;
-    margin: 30px;
-}
-.ShopName {
-    font-family: 'Poppins', sans-serif;
-    font-size: 35px;
-    color: white; 
-    display: inline-block;
-    
-}
- .SearchBarContainer {
-    display: flex;
-    width: 50%;
-    height: 50px;
-    background-color: white;
-    border-radius: 10px;
-    margin-left: 15%;
- }
 
- .SearchBar {
-    width: 93%;
-    height: 100%;
-    box-sizing: border-box;
-    outline: none;
-    border:none;
-    font-size: 16px;
-    padding: 20px;
-    border-radius: 10px;
- }
- .IconContainer {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
- }
- .SearchBar::placeholder {
-    color: gray;
-    font-style: italic;
- }
- .HeaderRemainingItems{
-    margin-left: 20px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    list-style: none;
- }
- .HeaderRemainingItems li{
+.Icon {
+   width: 87px;
+   height: 70px;
+   margin: 30px;
+}
+
+.ShopName {
+   font-family: 'Poppins', sans-serif;
+   font-size: 35px;
+   color: white;
+   display: inline-block;
+
+}
+
+.SearchBarContainer {
+   display: flex;
+   width: 50%;
+   height: 50px;
+   background-color: white;
+   border-radius: 10px;
+   margin-left: 15%;
+}
+
+.SearchBar {
+   width: 93%;
+   height: 100%;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   font-size: 16px;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+.IconContainer {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.SearchBar::placeholder {
+   color: gray;
+   font-style: italic;
+}
+
+.HeaderRemainingItems {
+   margin-left: 20px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-sizing: border-box;
+   list-style: none;
+}
+
+.HeaderRemainingItems a {
+   text-decoration: none;
+   color: black;
+   width: 100%;
+   height: inherit;
+   padding: 10px;
+   /* border: solid black 1px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.HeaderRemainingItems li {
    width: 40%;
    height: 80%;
    box-sizing: border-box;
    display: flex;
    justify-content: center;
    align-items: center;
-   border: solid 1px none;
-   cursor: pointer;
-   padding: 5px;
- }
- .HeaderRemainingItems li span {
-      font-size: 18px;
-      font-weight: 500;
-      margin-left: 10px;
- }
+   /* padding: 10px; */
 
- .HeaderRemainingItems li:hover {
-   cursor: pointer;
-   border: solid 1px none;
-   padding: 10px;
+}
+
+.HeaderRemainingItems li span {
+   font-size: 18px;
+   font-weight: 500;
+   margin-left: 10px;
+}
+
+.HeaderRemainingItems li:hover {
+   /* padding: 10px; */
    background-color: rgb(3, 174, 231);
    border-radius: 10px;
- }
- 
- /* .HeaderRemainingItems li ul {
+}
+
+/* .HeaderRemainingItems li ul {
       display: none;
  }
  .HeaderRemainingItems li:hover ul {
