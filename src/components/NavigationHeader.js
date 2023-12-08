@@ -1,6 +1,5 @@
 import React from 'react'
-import styles from './NavigationHeader.module.css'
-import "./App"
+import styles from '../componentsCSS/NavigationHeader.module.css'
 
 function SearchBar() {
     return (

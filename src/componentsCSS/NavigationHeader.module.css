@@ -4,14 +4,14 @@
     margin: 0;
 }
 .Header {
-    height: 13vh;
+    height: 10 vh;
     background-color: deepskyblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .HeaderPart {
-   height: 13vh;
+   height: 10vh;
    display: flex;
    align-items: center;
 }
@@ -74,7 +74,7 @@
    align-items: center;
    border: solid 1px none;
    cursor: pointer;
-   padding: 10px;
+   padding: 5px;
  }
  .HeaderRemainingItems li span {
       font-size: 18px;
