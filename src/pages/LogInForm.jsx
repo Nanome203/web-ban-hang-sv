@@ -17,7 +17,7 @@ function LogInForm() {
             <input type="password" id="password" />
           </p>
           <div className={styles.box_signUp}>
-            <a href='https://www.google.com/' target='_blank' rel='noreferrer'>Quên mật khẩu?</a>
+            <a href='https://chungthuc.uit.edu.vn/ForgotPassword.aspx' target='_blank' rel='noreferrer'>Quên mật khẩu?</a>
             <p>
               <button className={styles.box_button_signUp}>Đăng nhập</button>
             </p>

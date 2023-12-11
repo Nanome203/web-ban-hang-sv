@@ -38,16 +38,19 @@ span {
     font-weight: bold;
 }
 
-a {
+.box_signUp a {
     text-decoration: none;
     font-style: italic;
 }
 
-a:hover,
-a:visited:hover {
+.box_signUp a:hover,
+.box_signUp a:visited:hover {
     color: red;
 }
 
+.box_signUp a:visited {
+    color: blue;
+}
 
 
 
