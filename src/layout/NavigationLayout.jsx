@@ -7,7 +7,6 @@ function NavigationLayout() {
   return (
     <div className="App" id="Home">
       <NavigationHeader />
-      <Outlet />
     </div>
   )
 }

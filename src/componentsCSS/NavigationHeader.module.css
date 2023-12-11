@@ -56,6 +56,7 @@
    font-size: 16px;
    padding: 20px;
    border-radius: 10px;
+   border: black solid 1px;
 }
 
 .IconContainer {
