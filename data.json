@@ -23,7 +23,7 @@
         "price": "35.000đ",
         "details": [
             "–Giá rẻ! Mang đến cho sinh viên những sản phẩm cao cấp nhất, chất lượng nhất với giá thành tốt nhất.",
-            "–Dây đeo thẻ bền màu, sắc nét", 
+            "–Dây đeo thẻ bền màu, sắc nét",
             "–Đảm bảo yêu cầu chất lượng"
         ],
         "cagetory": "Đồ UIT"
@@ -90,9 +90,9 @@
         "name": "Bút chì 2B",
         "price": "3.000đ",
         "details": [
-            "– Bút chì thân gỗ, thân dạng hình lục giác, dễ cầm nắm khi viết.", 
+            "– Bút chì thân gỗ, thân dạng hình lục giác, dễ cầm nắm khi viết.",
             "–Thân thiết kế đơn giản nhưng sang trọng, sơn một màu vàng.",
-            "– Ruột chì loại 2B, mềm và đen.", 
+            "– Ruột chì loại 2B, mềm và đen.",
             "–Nét đậm, lướt nhẹ nhàng trên bề mặt giấy."
         ],
         "cagetory": "Khác"
@@ -155,8 +155,8 @@
         "name": "Chuột không dây",
         "price": "300.000đ",
         "details": [
-            "Kiểu dáng gọn đẹp, phù hợp cho người thuận cả 2 tay.", 
-            "Độ phân giải mặc định 1000 DPI, đáp ứng các nhu cầu thường nhật.", 
+            "Kiểu dáng gọn đẹp, phù hợp cho người thuận cả 2 tay.",
+            "Độ phân giải mặc định 1000 DPI, đáp ứng các nhu cầu thường nhật.",
             "Kết nối không dây 2.4 GHz qua đầu thu USB cho khoảng cách dùng đến 10 m.",
             "Sử dụng 1 viên pin AA, dễ tìm mua và thay thế."
         ],
@@ -234,9 +234,9 @@
         "price": "320.000đ",
         "details": [
             "Kết nối dây hoặc không dây 2.4Ghz (Wireless) sử dụng pin AAA với tuổi thọ ước tính tầm 3-5 tháng",
-            "Có tính năng kết nối không dây giúp góc giải trí của bạn gọn gàng hơn", 
+            "Có tính năng kết nối không dây giúp góc giải trí của bạn gọn gàng hơn",
             "Keycap PBT Double-Shot, ASA profile đã quá quen thuộc với người dùng",
-            "AKKO switch v3 (Cream Blue / Cream Yellow) kết hợp cùng foam tiêu âm PCB cho trải nghiệm gõ tối ưu và êm ái", 
+            "AKKO switch v3 (Cream Blue / Cream Yellow) kết hợp cùng foam tiêu âm PCB cho trải nghiệm gõ tối ưu và êm ái",
             "Giá thành hấp dẫn, phù hợp với người dùng mới và dễ tiếp cận",
             "Phím layout TKL phù hợp với đa số người dùng, dễ chơi keycap"
         ],
@@ -298,7 +298,7 @@
         "name": "Giày thể thao",
         "price": "260.000đ",
         "details": [
-            "Thiết Kế :", 
+            "Thiết Kế :",
             "Với kiểu dáng đẹp mắt, cá tính của đôi giày giúp bạn dễ dàng phối trang phục  chú trọng đến sự nhẹ nhàng thoải mái, kiểu dáng thời",
             "Chất liệu:",
             "Vải cao cấp dệt tạo lỗ mắt chim thoáng mát , không sù, không phai màu . Lót bên trong cũng là chất liệu bọt biển giữ cho đôi chân luôn",
@@ -385,7 +385,7 @@
         "name": "Tập đựng tài liệu",
         "price": "18.000đ",
         "details": [
-            "Chất liệu PP nhẹ, không thấm nước và chống mài mòn.", 
+            "Chất liệu PP nhẹ, không thấm nước và chống mài mòn.",
             "Bề mặt mịn và chịu nhiệt, bảo quản tài liệu an toàn.",
             "Có 8 ngăn phân trang, phù hợp với mọi nhu cầu sử dụng."
         ],
@@ -434,7 +434,7 @@
     {
         "id": "33",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/e0/be/a2/2007a3fdbdc48892339afd62352c9782.jpg.webp",
-        "name": "Máy tính xách tay Laptop Dell Latitude 3420 (Intel Core i5-1135G7 | 14 Inch | RAM 8GB | 256GB SSD NVMe | Intel Iris Xe Graphics | Fedora Os) - Hàng chính hãng",
+        "name": "Máy tính xách tay Laptop Dell Latitude 3420 - Hàng chính hãng",
         "price": "14.999.999₫",
         "details": [
             "Thiết kế sang trọng",
@@ -448,7 +448,7 @@
     {
         "id": "34",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/fa/65/48/21e4a24a5941cd8fbd41fa8db9b33740.png.webp",
-        "name": "Máy tính xách tay Laptop Dell Latitude 5470  (Intel Core i5 -6300 | 14 Inch HD | RAM 8GB | 256GB SSD | Intel UHD Graphics | Fedora Os) - Hàng chính hãng",
+        "name": "Máy tính xách tay Laptop Dell Latitude 5470 - Hàng chính hãng",
         "price": "3.983.000đ",
         "details": [
             "có thiết kế màu đen và kiểu dáng chắc chắn. Phần vỏ được làm bằng hợp kim nhôm nên có khả năng chịu các lực va đập vừa phải mà không làm máy bị biến dạng hoặc trầy xước, cùng với bàn phím cũng được thiết kế chống tràn.",
@@ -460,7 +460,7 @@
     {
         "id": "35",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/03/70/63/6eb7846ed2df6f19b2a3329f84025475.png.webp",
-        "name": "Laptop Asus ExpertBook B1400 (Chip Intel Core i5-1235U | RAM 8GB | SSD 512GB NVMe | 14' Full HD | Bảo mật vân tay | Bảo mật TPM 2.0 | Độ bền chuẩn quân đội US) - Hàng Chính Hãng",
+        "name": "Laptop Asus ExpertBook B1400 - Hàng Chính Hãng",
         "price": "14.890.000đ",
         "details": [
             "Hiệu năng toàn diện đỉnh cao",
@@ -478,7 +478,7 @@
     {
         "id": "36",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/bb/05/f4/4f81451c38e8414ab94eb6ee20847adb.jpg.webp",
-        "name": "Laptop Dell Vostro 3530 V5I3001W1- Gray ( Intel Core i3 1305U (Up to 4.5 Ghz, 10Mb Cache, 5 cores ), 1 x 8G DDR4 2666Mhz, 256Gb SSD NVMe, 15.6 FHD 1920 x 1080 120Hz , 3 cell - 41Whr Battery, Windows 11 + Office 2021 ) - Hàng Chính Hãng",
+        "name": "Laptop Dell Vostro 3530 V5I3001W1- Gray - Hàng Chính Hãng",
         "price": "11.990.000đ",
         "details": [
             "Hiệu suất vượt bật",
@@ -519,7 +519,7 @@
     {
         "id": "39",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/2b/9e/ae/a5c8ff7b011852e81060eb6f74708e79.jpg.webp",
-        "name": "Miếng Lót Chuột Kai Hình Chữ Nhật Siêu Dễ thương Nhiều Mẫu Mới",
+        "name": "Miếng Lót Chuột Kai Hình Chữ Nhật Siêu Dễ thương",
         "price": "26.000đ",
         "details": [
             "Hình Chữ Nhật,dày 3mm, kích thước 20 x 26 cm",
@@ -532,7 +532,7 @@
     {
         "id": "40",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/fa/c6/64/c635d118a0edeb6f5b8d3a8be17498b5.jpg.webp",
-        "name": "Miếng lót chuột Kai hình tròn siêu dễ thương nhiều mẫu mới",
+        "name": "Miếng lót chuột Kai hình tròn siêu dễ thương",
         "price": "23.750đ",
         "details": [
             "Hình Tròn,dày 3mm, đường kính 20cm Chất liệu mềm mại, chống trơn trượt Màu sắc tươi tắn, hình ảnh dễ thương góp phần tô điểm hơn cho bàn làm việc của bạn",
@@ -545,7 +545,7 @@
     {
         "id": "41",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/c3/ec/f7/30323e8b9eea3a398f56d836d9c8e3bf.jpg.webp",
-        "name": "Miếng Lót Chuột Phím Tắt Văn Phòng Cao Cấp , Bàn Di Chuột Công Thức  , Pad Chuột",
+        "name": "Miếng Lót Chuột Phím Tắt Văn Phòng Cao Cấp",
         "price": "31.000đ",
         "details": [
             "THIẾT KẾ ĐỘC ĐÁO: Miếng lót chuột văn phòng in hơn 150 phím tắt và hướng dẫn chắc năng của các phần mềm văn phòng thông dụng hỗ trợ nhân viên văn phòng, học sinh, sinh viên cải thiện hiệu suất công việc đáng kể.",
@@ -558,7 +558,7 @@
     {
         "id": "42",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/1a/da/d9/dfa0aa89082eea0dad683d6ab55b95e6.jpg.webp",
-        "name": "Chuột không dây kiểu đứng sạc pin HXSJ T22 wireless USB 2.4GHz chống mỏi tay chuyên dùng cho pc laptop macbook ipad tivi - Hàng chính hãng",
+        "name": "Chuột không dây kiểu đứng - Hàng chính hãng",
         "price": "299.000đ",
         "details": [
             "Mode: HXSJ T22",
@@ -609,7 +609,7 @@
         "details": [
             "Chuột không dây Logitech Pebble M350 - Kết nối không dây Bluetooth hoặc không dây USB, nhỏ gọn, thiết kế mỏng, giảm ồn, phù hợp PC / Laptop. Tương thích Android / Windows/ Mac",
             "- THIẾT KẾ VIÊN SỎI MỎNG, GỌN, ĐẸP",
-            "– Logitech Pebble nổi bật với thiết kế đơn giản, dễ cầm, cảm giác thoải mái và vô tư mang theo đi bất cứ đâu.",      
+            "– Logitech Pebble nổi bật với thiết kế đơn giản, dễ cầm, cảm giác thoải mái và vô tư mang theo đi bất cứ đâu.",
             "- BẤM VÀ CUỘN KHÔNG TIẾNG KÊU",
             "– Tận hưởng trải nghiệm yên tĩnh cho bản thân và những người xung quanh. Nút bấm giảm 90% tiếng ồn. Thậm chí nút cuộn bằng cao su cũng giúp giảm tiếng ồn khi sử dụng.*Tiếng click được so sánh giữa Logitech Pebble vàLogitech M170. Âm thanh nút bấm trái dBA được đo tại 1 phòng thí nghiệm độc lập với khoảng cách 1m."
         ],
@@ -630,7 +630,7 @@
     {
         "id": "47",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/7d/4e/92/de03eafbea6f4ab5ba3044b5b6579bbc.jpg.webp",
-        "name": "Bàn Phím Cơ Gaming không dây GK65 chống ồn - Bluetooth + USB - Pin sạc TypeC - kết nối nhiều thiết bị",
+        "name": "Bàn Phím Cơ Gaming không dây GK65",
         "price": "522.500đ",
         "details": [
             "- Bàn Phím Cơ Gaming không dây GK65 chống ồn - Bluetooth + USB - Pin sạc TypeC",
@@ -647,7 +647,7 @@
     {
         "id": "48",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/7b/c7/d3/76fefb827690701045ce6e2af9c1650d.jpg.webp",
-        "name": "Bộ Bàn Phím Giả Cơ và Chuột Chuyên Game G21 Led 7 Màu - Màu trắng",
+        "name": "Bộ Bàn Phím Giả Cơ và Chuột Chuyên Game G21 Led 7 Màu",
         "price": "112.870đ",
         "details": [
             "- Số Phím : 104 phím",
@@ -665,7 +665,7 @@
     {
         "id": "49",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/f8/cc/de/a97236ae0d9449e00747918e19bd75a2.png.webp",
-        "name": "Bàn Phím Cơ Cao Cấp K3 Premium Gaming Nhiều Chế Độ Led Cực Đẹp, Trục Cơ Học Red Switch Dùng Cho Máy Tính, Laptop-HÀNG CHÍNH HÃNG",
+        "name": "Bàn Phím Cơ Cao Cấp K3 Premium Gaming - HÀNG CHÍNH HÃNG",
         "price": "551.000đ",
         "details": [
             " Bàn Phím Kết nối K3 nhanh chóng và ổn định trực tiếp với máy tính thông qua cổng USB type-C để đem trải nghiệm mượt mà và tối ưu nhất.",
@@ -680,7 +680,7 @@
     {
         "id": "50",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/bf/f8/a8/b2ea5c68915acfeacacdc16e8aa5ebed.jpg.webp",
-        "name": "Bàn Phím Cơ Gaming Cao Cấp XSmart K1 Có 20 Chế Độ Nháy LED RGB Cực Đẹp, 104 Phím Full Size Sử Dụng Trục Cơ Red Switch Gõ Siêu Êm Bản Nâng Cấp Mới Nhất Tương Thích Với Các Dòng Máy Tính, Laptop, PC - Hàng Chính Hãng",
+        "name": "Bàn Phím Cơ Gaming Cao Cấp XSmart K1 - Hàng Chính Hãng",
         "price": "599.000đ",
         "details": [
             "Phím êm ái, phản hồi nhanh và có chức năng Anti-Ghosting",
