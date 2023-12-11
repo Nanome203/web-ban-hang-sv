@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 1410px;
+    height: 650px;
+    margin-left: 50px;
+    margin-top: 100px;
+    border: 1px solid red;
+}
+
+body {
+    background-color: rgb(229, 221, 221);
+}
+
+.box_image {
+    position: absolute;
+    width: 300px;
+    height: 360px;
+    background-image: url(image/baloUIT.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    margin-left: 80px;
+    border-radius: 5px;
+}
+
+.box_info {
+    position: absolute;
+    width: 580px;
+    height: 180px;
+    margin-left: 475px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.box_info1 {
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 160px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.box_info1:hover {
+    background-color: black;
+}
+
+.box_detail {
+    position: absolute;
+    width: 540px;
+    height: auto;
+    margin-left: 475px;
+    margin-top: 230px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+
+}
+
+.box_service {
+    position: absolute;
+    width: 410px;
+    height: auto;
+    margin-top: 390px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.box_sale {
+    position: absolute;
+    width: 310px;
+    height: 550px;
+    margin-left: 1100px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.p_sale {
+    padding: 20px;
+    text-align: center;
+}
+
+.font_info {
+    font-size: 20px;
+    margin-left: 20px;
+    line-height: 0.8cm;
+}
+
+.box_quantity {
+    margin-top: 80px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+button {
+    width: 1cm;
+    height: 1cm;
+    cursor: pointer;
+}
+
+input {
+    width: 0.9cm;
+    height: 0.9cm;
+    text-align: center;
+}
+
+.hr {
+    width: 7cm;
+    margin-left: 25px;
+}
+
+.p1_sale {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.div_button {
+    width: 7cm;
+    margin-top: 10px;
+    margin-left: 25px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.div_button:hover {
+    background-color: brown;
+}
+
+.div_button1 {
+    width: 7cm;
+    margin-top: 10px;
+    margin-left: 25px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    color: blue;
+}
+
+.div_button1:hover {
+    background-color: aqua;
+}
+
+.box_transport {
+    position: absolute;
+    width: 560px;
+    height: 100px;
+    margin-top: 510px;
+    margin-left: 475px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.box_insurance {
+    position: absolute;
+    width: 410px;
+    height: 70px;
+    margin-top: 540px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
