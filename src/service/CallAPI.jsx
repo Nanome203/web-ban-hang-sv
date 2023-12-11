@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function CallAPI() {
-  return (
-    <div>CallAPI</div>
-  )
+  return <div>CallAPI</div>;
 }
