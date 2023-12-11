@@ -42,7 +42,7 @@
     color: red;
 }
 
-.box_signUp a {
+.box_signUp .forgetPass {
     text-decoration: none;
     font-style: italic;
 }
@@ -58,7 +58,7 @@
 
 
 
-input {
+.box input {
     display: block;
     margin-right: auto;
     margin-left: auto;

@@ -53,6 +53,7 @@
    box-sizing: border-box;
    outline: none;
    border: none;
+   padding-left: 20px;
    font-size: 16px;
    border-radius: 10px;
 }
