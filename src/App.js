@@ -23,10 +23,11 @@ function App() {
             <Route path="UITproducts" element={<NotFound />} />
             <Route path="others" element={<NotFound />} />
           </Route>
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="cart" element={<Cart />} />
         </Route>
         <Route path="login" element={<LogInForm />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

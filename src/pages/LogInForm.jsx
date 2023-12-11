@@ -20,7 +20,7 @@ function LogInForm() {
       window.alert('Vui lòng nhập đầy đủ thông tin')
     }
     else {
-      window.alert('Không tồn tại database. Đăng nhập thất bại\nĐang quay lại trang chủ');
+      window.alert('Đăng nhập thất bại (Database không tồn tại)\nĐang quay lại trang chủ');
       navigate('/')
     }
   }
