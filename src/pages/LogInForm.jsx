@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../componentsCSS/LogInPage.module.css'
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+
 function LogInForm() {
+  const [mssv, setMSSV] = useState('')
+  const [pass, setPass] = useState('')
+  const navigate = useNavigate()
+  function handleInputMSSV(e) {
+    setMSSV(e.target.value)
+  }
+  function handleInputPassword(e) {
+    setPass(e.target.value)
+  }
   function handleOnClick() {
-    window.alert('Không tồn tại database. Đăng nhập thất bại\nĐang quay lại trang chủ');
+    if (mssv === '' && pass === '') {
+      window.alert('Vui lòng nhập mã sinh viên và mật khẩu')
+    }
+    else if (mssv === '' || pass === '') {
+      window.alert('Vui lòng nhập đầy đủ thông tin')
+    }
+    else {
+      window.alert('Không tồn tại database. Đăng nhập thất bại\nĐang quay lại trang chủ');
+      navigate('/')
+    }
   }
   return (
     <>
@@ -12,17 +31,17 @@ function LogInForm() {
           <h3>LOG IN</h3>
           <p>
             <label htmlFor='MSSV'>Mã sinh viên <span className={styles.importanceAsterisk}>*</span></label>
-            <input type="text" id="MSSV" />
+            <input type="text" id="MSSV" value={mssv} onChange={handleInputMSSV} />
           </p>
           <p>
             <label htmlFor='password'>Mật khẩu <span className={styles.importanceAsterisk}>*</span></label>
             <br />
-            <input type="password" id="password" />
+            <input type="password" id="password" value={pass} onChange={handleInputPassword} />
           </p>
           <div className={styles.box_signUp}>
-            <a href='https://chungthuc.uit.edu.vn/ForgotPassword.aspx' target='_blank' rel='noreferrer'>Quên mật khẩu?</a>
+            <a className={styles.forgetPass} href='https://chungthuc.uit.edu.vn/ForgotPassword.aspx' target='_blank' rel='noreferrer'>Quên mật khẩu?</a>
             <p>
-              <Link to='/'><button className={styles.box_button_signUp} onClick={handleOnClick}>Đăng nhập</button></Link>
+              <button className={styles.box_button_signUp} onClick={handleOnClick}>Đăng nhập</button>
             </p>
           </div>
         </div>
