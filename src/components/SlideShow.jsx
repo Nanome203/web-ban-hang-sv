@@ -15,7 +15,7 @@ function SlideShow() {
   };
 
   return (
-    <div className="styles.slideContainer">
+    <div id="slideContainer">
       <Slider {...settings}>
         <div className={styles.slider_item}>
           <img
