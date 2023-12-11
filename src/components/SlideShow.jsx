@@ -13,9 +13,8 @@ function SlideShow() {
     slidesToScroll: 1,
   };
 
-  var className = "slider_content";
   return (
-    <div className={`${styles.slideContainer} ${className}`}>
+    <div className="styles.slideContainer">
       <Slider {...settings}>
         <div className={styles.slider_item}>
           <img
