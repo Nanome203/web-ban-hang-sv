@@ -8,7 +8,8 @@ function SlideShow() {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 500,
+    autoplaySpeed: 9000,
+    speed: 3000,
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -26,7 +27,7 @@ function SlideShow() {
 
         <div className={styles.slider_item}>
           <img
-            src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/12/banner/gaming-big1-min-1920x450.jpg"
+            src="https://www.phucanh.vn/media/news/3009_Giam5ptphukienlaptop.png"
             alt=""
           />
         </div>

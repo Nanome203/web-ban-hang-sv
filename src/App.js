@@ -8,6 +8,7 @@ import LogInForm from "./pages/LogInForm.jsx";
 import Cart from "./pages/Cart.jsx";
 import Orders from "./pages/Orders.jsx";
 import NavigationLayout from "./layout/NavigationLayout.jsx";
+
 function App() {
   return (
     <BrowserRouter>
@@ -21,9 +22,9 @@ function App() {
             <Route path="keyboard" element={<NotFound />} />
             <Route path="UITproducts" element={<NotFound />} />
             <Route path="others" element={<NotFound />} />
-            <Route path="orders" element={<Orders />} />
-            <Route path="cart" element={<Cart />} />
           </Route>
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/cart" element={<Cart />} />
         </Route>
         <Route path="login" element={<LogInForm />} />
       </Routes>

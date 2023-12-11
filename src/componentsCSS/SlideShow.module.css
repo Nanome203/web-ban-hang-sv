@@ -15,7 +15,7 @@ body {
 
 .slider_item img {
     width: 90%;
-    height: 80vh;
+    height: 75vh;
     object-fit: fill;
     margin-left: 50px;
 }

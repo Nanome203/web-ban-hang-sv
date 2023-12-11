@@ -1,7 +1,6 @@
 import React from 'react'
 import "../App.css";
 import NavigationHeader from '../components/NavigationHeader';
-import { Outlet } from 'react-router-dom';
 
 function NavigationLayout() {
   return (
