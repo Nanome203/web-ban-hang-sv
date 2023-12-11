@@ -14,10 +14,13 @@ function LogInForm() {
   }
   function handleOnClick() {
     if (mssv === '' && pass === '') {
-      window.alert('Vui lòng nhập mã sinh viên và mật khẩu')
+      return;
     }
-    else if (mssv === '' || pass === '') {
-      window.alert('Vui lòng nhập đầy đủ thông tin')
+    else if (mssv === '') {
+      window.alert('Vui lòng nhập mã sinh viên')
+    }
+    else if (pass === '') {
+      window.alert('Vui lòng nhập mật khẩu')
     }
     else {
       window.alert('Đăng nhập thất bại (Database không tồn tại)\nĐang quay lại trang chủ');
