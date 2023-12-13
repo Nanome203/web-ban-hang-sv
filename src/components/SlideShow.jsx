@@ -27,7 +27,7 @@ function SlideShow() {
 
         <div className={styles.slider_item}>
           <img
-            src="https://www.phucanh.vn/media/news/3009_Giam5ptphukienlaptop.png"
+            src="https://www.willwork4games.net/wp-content/uploads/2019/03/asus-rog-rtx-its-on-promo-01.jpg"
             alt=""
           />
         </div>
