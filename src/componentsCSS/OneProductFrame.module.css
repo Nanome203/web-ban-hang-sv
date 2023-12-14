@@ -6,12 +6,12 @@
 
 .productDisplay {
   margin: 50px 30px;
-  border: gray solid 1px;
-  width: 300px;
+  border: lightgray solid 1px;
+  width: 75%;
   height: 420px;
   border-radius: 50px;
   transition: 0.2s ease;
-  /* float: left; */
+  background-color: lightgoldenrodyellow;
 }
 
 .productDisplay:hover {
@@ -42,7 +42,7 @@
 
 .productName:hover {
   text-decoration: underline;
-  color: red;
+  color: rgb(240, 27, 27);
   cursor: pointer;
 }
 
