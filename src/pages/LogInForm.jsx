@@ -31,7 +31,7 @@ function LogInForm() {
     <>
       <div className={styles.container}>
         <div className={styles.box}>
-          <h3>LOG IN</h3>
+          <h3>ĐĂNG NHẬP</h3>
           <p>
             <label htmlFor='MSSV'>Mã sinh viên <span className={styles.importanceAsterisk}>*</span></label>
             <input type="text" id="MSSV" value={mssv} onChange={handleInputMSSV} />
