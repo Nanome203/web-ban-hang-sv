@@ -48,9 +48,18 @@
   color: purple;
 }
 
-.price {
+.price,
+.rating {
+  margin: 20px;
   text-align: center;
   font-size: 20px;
   color: red;
   font-weight: bold;
+}
+
+.rating {
+  font-weight: normal;
+  color: black;
+  font-style: italic;
+  font-size: 17px;
 }
