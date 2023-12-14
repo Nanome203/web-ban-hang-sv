@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;0,900;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
 .Sidebar {
-    margin: 30 px;
+    margin: 30px;
     height: 90vh;
-    width: 18%; 
-    top: 0; 
+    width: 18%;
+    top: 0;
     left: 0;
     background-color: white;
     padding-top: 20px;
     box-sizing: border-box;
     border-radius: 20px;
 }
+
 .Sidebar a {
     display: block;
     width: 70%;
@@ -27,6 +30,7 @@
     border-radius: 10px;
     outline: none;
 }
+
 .Sidebar a:hover {
     margin-left: +50px;
     margin-right: -50px;

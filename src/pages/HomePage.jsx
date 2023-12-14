@@ -5,7 +5,7 @@ function HomePage() {
     return (
         <>
             <SlideShow />
-            <ProductsDisplay />
+            <ProductsDisplay title='Tất cả sản phẩm' />
         </>
     )
 }
