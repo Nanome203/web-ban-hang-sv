@@ -79,8 +79,7 @@ function ProductInfo() {
             <input type="text" value={quantity} onChange={handleQuantityChange} />
             <button onClick={increaseQuantity}>+</button>
           </div>
-          <p className={styles.p1_sale} id="total-price">Tạm tính
-            : {quantity === 0 ? (quantity * parseInt(product.price)).toLocaleString() : (quantity * parseInt(product.price)).toLocaleString() + ',000'}đ
+          <p className={styles.p1_sale} id="total-price">Tạm tính: {quantity === 0 ? 0 : (quantity * parseFloat(product.price)).toFixed(3)}đ
           </p>
           <div>
             <button className={styles.buy_btn}>Mua ngay</button>
