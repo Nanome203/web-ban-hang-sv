@@ -36,7 +36,7 @@ function ProductInfo() {
         <div className={styles.imageInfo}>
           <img src={product.image} alt="" />
           <div className={styles.property}>
-            <h3>Đặc điểm nổi bật</h3>
+            <h3>Mô tả sản phẩm</h3>
             <p dangerouslySetInnerHTML={{ __html: detail }}></p>
           </div>
 
