@@ -1,17 +1,40 @@
 import React from 'react'
 import styles from '../componentsCSS/OneProductFrame.module.css'
+import { Link } from 'react-router-dom'
 function OneProductFrame(props) {
+  let category = '';
+  switch (props.cagetory) {
+    case 'Khác':
+      category = 'others';
+      break;
+    case 'Lót chuột':
+      category = 'mousepad';
+      break;
+    case 'Chuột':
+      category = 'mouse';
+      break;
+    case 'Bàn phím':
+      category = 'keyboard';
+      break;
+    case 'Đồ UIT':
+      category = 'UITproducts';
+      break;
+    default:
+      category = 'laptop'
+      break;
+  }
   return (
-    <div className={styles.productDisplay}>
-      <img
-        src={props.image}
-        alt='error getting pics'
-        style={{ width: '200px', height: '200px', objectFit: 'contain' }} />
-      <p className={styles.productName}>{props.name}</p>
-      <p className={styles.price}>{props.price}</p>
-      <p className={styles.rating}>Chưa có đánh giá</p>
-
-    </div>
+    <Link to={`/${category}/${props.id}`} className={styles.linker}>
+      <div className={styles.productDisplay}>
+        <img
+          src={props.image}
+          alt='error getting pics'
+          style={{ width: '200px', height: '200px', objectFit: 'contain' }} />
+        <p className={styles.productName}>{props.name}</p>
+        <p className={styles.price}>{props.price}</p>
+        <p className={styles.rating}>Chưa có đánh giá</p>
+      </div>
+    </Link>
   )
 }
 

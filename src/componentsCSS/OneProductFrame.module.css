@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.linker {
+  text-decoration: none;
+}
+
 .productDisplay {
   margin: 50px 30px;
   border: lightgray solid 1px;
@@ -38,6 +42,7 @@
   text-align: center;
   margin: 20px;
   font-weight: bolder;
+  color: black;
 }
 
 .productName:hover {

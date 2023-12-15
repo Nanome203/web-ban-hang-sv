@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  /* height: 200vh; */
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  margin-top: 50px;
+  width: 80%;
+  /* height: 700px; */
+  /* border: solid black 1px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.imageInfo,
+.transaction {
+  width: 30%;
+  height: 90vh;
+  /* border: solid black 1px; */
+  background-color: white;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+
+.priceShipping {
+  width: 50%;
+  height: 90vh;
+  /* border: solid black 1px; */
+  background-color: white;
+  border-radius: 50px;
+
+}
+
+.transaction {}
+
+.imageInfo img {
+  width: 90%;
+  align-self: 1/1;
+  object-fit: contain;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50px;
+  border: black solid 1px;
+}
+
+.imageInfo h3 {
+  text-align: center;
+}
+
+.imageInfo p {
+  border: solid blue 5px;
+  border-radius: 50px;
+  padding: 30px;
+  margin: 20px;
+  font-size: 15px;
+}
+
+.price,
+.quarantine,
+.shipping {
+  margin: 10px auto;
+  width: 90%;
+  height: 31%;
+  border: black solid 1px;
+  border-radius: 50px;
+}

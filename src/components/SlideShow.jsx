@@ -10,7 +10,7 @@ function SlideShow() {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 1000,
-    arrows: true,
+    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnFocus: false,

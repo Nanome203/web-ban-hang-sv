@@ -11,6 +11,7 @@ import NavigationLayout from "./layout/NavigationLayout.jsx";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Context } from "./components/ReactContext.jsx";
+import ProductInfo from "./components/ProductInfo.jsx";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -33,6 +34,7 @@ function App() {
 
     // Gọi hàm để tải danh sách sản phẩm
     fetchProducts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // [] đảm bảo useEffect chỉ chạy một lần sau khi component được mount
   return (
     <Context.Provider value={products}>
@@ -50,6 +52,12 @@ function App() {
             </Route>
             <Route path="orders" element={<Orders />} />
             <Route path="cart" element={<Cart />} />
+            <Route path="/laptop/:id" element={<ProductInfo />} />
+            <Route path="/mousepad/:id" element={<ProductInfo />} />
+            <Route path="/mouse/:id" element={<ProductInfo />} />
+            <Route path="/keyboard/:id" element={<ProductInfo />} />
+            <Route path="/UITproducts/:id" element={<ProductInfo />} />
+            <Route path="/others/:id" element={<ProductInfo />} />
           </Route>
           <Route path="login" element={<LogInForm />} />
           <Route path="*" element={<NotFound />} />
