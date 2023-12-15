@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Context } from "./components/ReactContext.jsx";
 import ProductInfo from "./components/ProductInfo.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -40,29 +41,31 @@ function App() {
   return (
     <Context.Provider value={{ products, isLoggedIn, setIsLoggedIn }}>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<NavigationLayout />}>
-            <Route path="/" element={<SideBarLayout />}>
-              <Route index element={<HomePage />} />
-              <Route path="laptop" element={<ProductsDisplay title='Laptop' />} />
-              <Route path="mousepad" element={<ProductsDisplay title='Lót chuột' />} />
-              <Route path="mouse" element={<ProductsDisplay title='Chuột' />} />
-              <Route path="keyboard" element={<ProductsDisplay title='Bàn phím' />} />
-              <Route path="UITproducts" element={<ProductsDisplay title='Đồ UIT' />} />
-              <Route path="others" element={<ProductsDisplay title='Khác' />} />
+        <ScrollToTop>
+          <Routes>
+            <Route path="/" element={<NavigationLayout />}>
+              <Route path="/" element={<SideBarLayout />}>
+                <Route index element={<HomePage />} />
+                <Route path="laptop" element={<ProductsDisplay title='Laptop' />} />
+                <Route path="mousepad" element={<ProductsDisplay title='Lót chuột' />} />
+                <Route path="mouse" element={<ProductsDisplay title='Chuột' />} />
+                <Route path="keyboard" element={<ProductsDisplay title='Bàn phím' />} />
+                <Route path="UITproducts" element={<ProductsDisplay title='Đồ UIT' />} />
+                <Route path="others" element={<ProductsDisplay title='Khác' />} />
+              </Route>
+              <Route path="orders" element={<Orders />} />
+              <Route path="cart" element={<Cart />} />
+              <Route path="/laptop/:id" element={<ProductInfo />} />
+              <Route path="/mousepad/:id" element={<ProductInfo />} />
+              <Route path="/mouse/:id" element={<ProductInfo />} />
+              <Route path="/keyboard/:id" element={<ProductInfo />} />
+              <Route path="/UITproducts/:id" element={<ProductInfo />} />
+              <Route path="/others/:id" element={<ProductInfo />} />
             </Route>
-            <Route path="orders" element={<Orders />} />
-            <Route path="cart" element={<Cart />} />
-            <Route path="/laptop/:id" element={<ProductInfo />} />
-            <Route path="/mousepad/:id" element={<ProductInfo />} />
-            <Route path="/mouse/:id" element={<ProductInfo />} />
-            <Route path="/keyboard/:id" element={<ProductInfo />} />
-            <Route path="/UITproducts/:id" element={<ProductInfo />} />
-            <Route path="/others/:id" element={<ProductInfo />} />
-          </Route>
-          <Route path="login" element={<LogInForm />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Route path="login" element={<LogInForm />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </ScrollToTop>
       </BrowserRouter>
     </Context.Provider>
 

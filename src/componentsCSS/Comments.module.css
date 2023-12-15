@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.comment_Container {
+  background-color: white;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+.comment_Area {
+  padding: 20px 50px;
+}
+
+.comment_Area h1 {
+  margin-bottom: 20px;
+}
+
+.comment_Area hr {
+  border: solid red 2px;
+}
+
+.tagContainer {
+  border: lightgray solid 1px;
+  border-radius: 50px;
+  height: 100px;
+  margin: 30px 0;
+  display: flex;
+  padding: 10px;
+}
+
+.profile {
+
+  width: 30%;
+  /* aspect-ratio: 1/1; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.starsAndComment {
+  width: 80%;
+
+}
+
+.iconSize {
+  color: gold;
+}

@@ -24,10 +24,13 @@ function LogInForm() {
     else if (pass === '') {
       window.alert('Vui lòng nhập mật khẩu')
     }
-    else {
+    else if (mssv === 'admin' && pass === 'admin') {
       setIsLoggedIn(true)
       window.alert('Đăng nhập thành công');
       navigate('/')
+    }
+    else {
+      window.alert('Đăng nhập thất bại do Database không tồn tại');
     }
   }
   return (

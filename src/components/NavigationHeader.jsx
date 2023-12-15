@@ -30,7 +30,7 @@ export default function NavigationHeader() {
                         <li><Link to='/'><i className={`fa-solid fa-house ${styles.iconSize}`}></i><span>Trang Chủ</span></Link></li>
                         <li><Link to='orders'><i className={`fa-solid fa-clipboard ${styles.iconSize}`}></i><span>Đơn hàng</span></Link></li>
                         <li><Link to='cart'><i className={`fa-solid fa-cart-shopping ${styles.iconSize}`}></i><span>Giỏ hàng</span></Link></li>
-                        <li><Link to={`${isLoggedIn ? '' : 'login'}`}><i className={`fa-solid fa-user ${styles.iconSize}`}></i><span>{isLoggedIn ? 'Xin chào' : 'Đăng nhập'}</span></Link></li>
+                        <li><Link to={`${isLoggedIn ? '' : 'login'}`}><i className={`fa-solid fa-user ${styles.iconSize}`}></i><span>{isLoggedIn ? 'Xin chào QTV' : 'Đăng nhập'}</span></Link></li>
                     </ul>
                 </div>
             </div>

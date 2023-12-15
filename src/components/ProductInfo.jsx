@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import styles from '../componentsCSS/ProductInfo.module.css'
 import { useParams } from 'react-router-dom'
 import { Context } from './ReactContext';
+import Comments from './Comments';
 function ProductInfo() {
   const { id } = useParams();
   const { products } = useContext(Context);
@@ -90,6 +91,7 @@ function ProductInfo() {
           </div>
         </div>
       </div>
+      <Comments />
     </div >
   )
 }
