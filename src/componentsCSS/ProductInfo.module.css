@@ -3,17 +3,19 @@
   margin: 0;
 }
 
+
+
 .container {
   width: 100vw;
-  /* height: 200vh; */
-  display: flex;
-  justify-content: center;
+  /* height: 85vh; */
+  /* border: black solid 1px; */
 }
 
 .wrapper {
   margin-top: 50px;
   width: 80%;
-  /* height: 700px; */
+  margin-left: auto;
+  margin-right: auto;
   /* border: solid black 1px; */
   display: flex;
   justify-content: space-between;
@@ -22,44 +24,152 @@
 .imageInfo,
 .transaction {
   width: 30%;
-  height: 90vh;
+  height: 800px;
   /* border: solid black 1px; */
   background-color: white;
   border-radius: 50px;
   margin: 0 10px;
 }
 
+.imageInfo {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
 .priceShipping {
   width: 50%;
-  height: 90vh;
+  /* height: 800px; */
   /* border: solid black 1px; */
   background-color: white;
   border-radius: 50px;
 
 }
 
-.transaction {}
+.priceShipping h1 {
+  font-size: 40px;
+}
+
+.priceShipping h2 {
+  font-size: 35px;
+}
+
+.transaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.p_sale {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.p1_sale {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.buy_btn,
+.add_to_cart_btn,
+.buy_first_pay_later_btn {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+
+.buy_btn {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add_to_cart_btn,
+.buy_first_pay_later_btn {
+  border-radius: 10px;
+  border: 1px solid blue;
+  color: blue;
+  font-size: 20px;
+}
+
+.buy_btn:hover {
+  background-color: rgb(212, 4, 4);
+}
+
+.add_to_cart_btn:hover,
+.buy_first_pay_later_btn:hover {
+  background-color: aqua;
+}
+
+.buy_btn:hover:active {
+  background-color: rgb(184, 4, 4);
+}
+
+.add_to_cart_btn:hover:active,
+.buy_first_pay_later_btn:hover:active {
+  background-color: rgb(3, 199, 199);
+}
+
+.box_quantity {
+  margin: 0 auto;
+}
+
+.box_quantity label {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.box_quantity button,
+.box_quantity input {
+  height: 40px;
+  width: 40px;
+  margin: 0 3px;
+}
+
+.box_quantity input {
+  text-align: center;
+}
 
 .imageInfo img {
-  width: 90%;
-  align-self: 1/1;
+  width: 80%;
+  aspect-ratio: 1/1;
   object-fit: contain;
   display: block;
   margin: 10px auto;
   border-radius: 50px;
-  border: black solid 1px;
+  border: lightgray solid 5px;
 }
 
 .imageInfo h3 {
   text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 23px;
+  font-style: italic;
 }
 
-.imageInfo p {
-  border: solid blue 5px;
+.imageInfo .property {
+  text-align: justify;
+  display: block flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: solid lightgray 3px;
   border-radius: 50px;
-  padding: 30px;
-  margin: 20px;
-  font-size: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 17px;
 }
 
 .price,
@@ -67,7 +177,34 @@
 .shipping {
   margin: 10px auto;
   width: 90%;
-  height: 31%;
-  border: black solid 1px;
-  border-radius: 50px;
+  height: 30%;
+  border: dashed lightgray 5px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.price {
+  border: none;
+}
+
+.quarantine,
+.shipping {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.quarantine p {
+  font-style: italic;
+}
+
+.shipping p {
+  font-weight: 500;
+}
+
+.iconSize {
+  color: gold;
+
 }

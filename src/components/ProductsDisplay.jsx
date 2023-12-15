@@ -3,7 +3,7 @@ import styles from "../componentsCSS/ProductDisplay.module.css";
 import OneProductFrame from "./OneProductFrame";
 import { Context } from "./ReactContext";
 function ProductsDisplay({ title }) {
-  const products = useContext(Context)
+  const { products } = useContext(Context)
 
   return (
     <div className={styles.ProductsContainer}>

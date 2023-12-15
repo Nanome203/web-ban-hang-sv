@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import styles from '../componentsCSS/LogInPage.module.css'
 import { useNavigate } from 'react-router-dom'
+import { Context } from '../components/ReactContext'
 
 function LogInForm() {
   const [mssv, setMSSV] = useState('')
   const [pass, setPass] = useState('')
+  const { setIsLoggedIn } = useContext(Context)
   const navigate = useNavigate()
   function handleInputMSSV(e) {
     setMSSV(e.target.value)
@@ -23,7 +25,8 @@ function LogInForm() {
       window.alert('Vui lòng nhập mật khẩu')
     }
     else {
-      window.alert('Đăng nhập thất bại (Database không tồn tại)\nĐang quay lại trang chủ');
+      setIsLoggedIn(true)
+      window.alert('Đăng nhập thành công');
       navigate('/')
     }
   }

@@ -32,7 +32,14 @@ function OneProductFrame(props) {
           style={{ width: '200px', height: '200px', objectFit: 'contain' }} />
         <p className={styles.productName}>{props.name}</p>
         <p className={styles.price}>{props.price}</p>
-        <p className={styles.rating}>Chưa có đánh giá</p>
+        <p className={styles.rating}>
+          <i className={`fa-solid fa-star ${styles.iconSize}`}></i>
+          <i className={`fa-solid fa-star ${styles.iconSize}`}></i>
+          <i className={`fa-solid fa-star ${styles.iconSize}`}></i>
+          <i className={`fa-solid fa-star ${styles.iconSize}`}></i>
+          <i className={`fa-solid fa-star ${styles.iconSize}`}></i>
+          (3)
+        </p>
       </div>
     </Link>
   )

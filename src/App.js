@@ -15,6 +15,7 @@ import ProductInfo from "./components/ProductInfo.jsx";
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   useEffect(() => {
     // Hàm này sẽ chạy sau khi component được mount
     const fetchProducts = async () => {
@@ -37,7 +38,7 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // [] đảm bảo useEffect chỉ chạy một lần sau khi component được mount
   return (
-    <Context.Provider value={products}>
+    <Context.Provider value={{ products, isLoggedIn, setIsLoggedIn }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<NavigationLayout />}>
