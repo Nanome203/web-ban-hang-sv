@@ -10,13 +10,16 @@ function SlideShow() {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 1000,
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false
   };
 
   return (
-    <div id="slideContainer">
+    <div className="slideContainer">
       <Slider {...settings}>
         <div className={styles.slider_item}>
           <img
