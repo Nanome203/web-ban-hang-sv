@@ -147,7 +147,7 @@
             "Đệm silicon rộng hơn",
             "Các ốc và khớp nối chắc chắn hơn"
         ],
-        "cagetory": "Laptop"
+        "cagetory": "Khác"
     },
     {
         "id": "12",
@@ -434,7 +434,7 @@
     {
         "id": "33",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/e0/be/a2/2007a3fdbdc48892339afd62352c9782.jpg.webp",
-        "name": "Máy tính xách tay Laptop Dell Latitude 3420 - Hàng chính hãng",
+        "name": "Máy tính xách tay Laptop Dell Latitude 3420 ",
         "price": "14.999.999₫",
         "details": [
             "Thiết kế sang trọng",
@@ -448,7 +448,7 @@
     {
         "id": "34",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/fa/65/48/21e4a24a5941cd8fbd41fa8db9b33740.png.webp",
-        "name": "Máy tính xách tay Laptop Dell Latitude 5470 - Hàng chính hãng",
+        "name": "Máy tính xách tay Laptop Dell Latitude 5470",
         "price": "3.983.000đ",
         "details": [
             "có thiết kế màu đen và kiểu dáng chắc chắn. Phần vỏ được làm bằng hợp kim nhôm nên có khả năng chịu các lực va đập vừa phải mà không làm máy bị biến dạng hoặc trầy xước, cùng với bàn phím cũng được thiết kế chống tràn.",
@@ -460,7 +460,7 @@
     {
         "id": "35",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/03/70/63/6eb7846ed2df6f19b2a3329f84025475.png.webp",
-        "name": "Laptop Asus ExpertBook B1400 - Hàng Chính Hãng",
+        "name": "Laptop Asus ExpertBook B1400",
         "price": "14.890.000đ",
         "details": [
             "Hiệu năng toàn diện đỉnh cao",
@@ -478,7 +478,7 @@
     {
         "id": "36",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/bb/05/f4/4f81451c38e8414ab94eb6ee20847adb.jpg.webp",
-        "name": "Laptop Dell Vostro 3530 V5I3001W1- Gray - Hàng Chính Hãng",
+        "name": "Laptop Dell Vostro 3530 V5I3001W1- Gray",
         "price": "11.990.000đ",
         "details": [
             "Hiệu suất vượt bật",
@@ -494,7 +494,7 @@
     {
         "id": "37",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/4c/f7/d9/455cd70b893a01f4fa432dc2db2ec80c.jpg.webp",
-        "name": "Laptop Acer Aspire 3 A314 35 P3G9 N6000/4GB/256GB/Win11 - Hàng Chính Hãng",
+        "name": "Laptop Acer Aspire 3 A314 35 P3G9 N6000/4GB/256GB/Win11",
         "price": "10.188.000đ",
         "details": [
             "RAM 4 GB cho khả năng đa nhiệm các tác vụ tốt cùng SSD 256 GB tăng tốc độ truy xuất dữ liệu, khởi động ứng dụng và máy tính nhanh chóng.",
@@ -506,7 +506,7 @@
     {
         "id": "38",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/24/89/ea/b542edddf1349be4ebe6223bb3451d5e.jpg.webp",
-        "name": "Lót chuột máy tính PixLink kích thước 22x18cm hàng chính hãng",
+        "name": "Lót chuột máy tính PixLink kích thước 22x18cm ",
         "price": "18.000đ",
         "details": [
             "Lót chuột máy tính PixLink kích thước 22x18cm có đế cao su chống trượt, di chuột mượt, giá siêu rẻ",
@@ -558,7 +558,7 @@
     {
         "id": "42",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/1a/da/d9/dfa0aa89082eea0dad683d6ab55b95e6.jpg.webp",
-        "name": "Chuột không dây kiểu đứng - Hàng chính hãng",
+        "name": "Chuột không dây kiểu đứng",
         "price": "299.000đ",
         "details": [
             "Mode: HXSJ T22",
@@ -576,7 +576,7 @@
     {
         "id": "43",
         "image": "https://salt.tikicdn.com/cache/750x750/media/catalog/producttmp/e7/24/5a/492a4d42926bf0638a13165efe54075a.png.webp",
-        "name": "Chuột không dây bluetooth Logitech Signature M650 - Hàng chính hãng",
+        "name": "Chuột không dây bluetooth Logitech Signature M650",
         "price": "579.000đ",
         "details": [
             "Cuộn bằng smartwheel",
@@ -591,7 +591,7 @@
     {
         "id": "44",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/3e/49/f7/e7b992148024ca349af6d49c61a42199.jpg.webp",
-        "name": "Chuột Gaming Logitech G102 Gen 2 Lightsync - Hàng Chính Hãng",
+        "name": "Chuột Gaming Logitech G102 Gen 2 Lightsync",
         "price": "389.000đ",
         "details": [
             "Chuột game có dây Logitech G102 Lightsync chọn từ các màu sắc sống động, cài đặt lấy cảm hứng từ trò chơi và phương tiện, hay lập trình màu sắc của riêng bạn từ khoảng 16,8 triệu màu.",
@@ -604,7 +604,7 @@
     {
         "id": "45",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/cf/61/f0/c287bf11dd1a1224d32dd226cb182f53.png.webp",
-        "name": "Chuột Bluetooth Silent Logitech Pebble M350 - Hàng chính hãng",
+        "name": "Chuột Bluetooth Silent Logitech Pebble M350",
         "price": "467.000đ",
         "details": [
             "Chuột không dây Logitech Pebble M350 - Kết nối không dây Bluetooth hoặc không dây USB, nhỏ gọn, thiết kế mỏng, giảm ồn, phù hợp PC / Laptop. Tương thích Android / Windows/ Mac",
@@ -618,7 +618,7 @@
     {
         "id": "46",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/43/e2/7d/bca624df3634ddcd325b5ad583dd08b9.jpg.webp",
-        "name": "Chuột không dây Logitech M331 SILENT-Hàng chính hãng",
+        "name": "Chuột không dây Logitech M331 SILENT",
         "price": "319.000đ",
         "details": [
             "Chuột không Dây Logitech M331 Silent được thiết kế với các đường cong uốn lượn, bo tròn và ôm sát lòng bàn tay, giúp người sử dụng giảm bớt sự đau mỏi của cổ tay và ngón tay. Hai bên thân chuột có các khối hình tam giác nhỏ được sắp xếp liền kề nhau tạo độ bám giúp các ngón tay không bị trơn trượt trong quá trình sử dụng. ",
@@ -665,7 +665,7 @@
     {
         "id": "49",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/f8/cc/de/a97236ae0d9449e00747918e19bd75a2.png.webp",
-        "name": "Bàn Phím Cơ Cao Cấp K3 Premium Gaming - HÀNG CHÍNH HÃNG",
+        "name": "Bàn Phím Cơ Cao Cấp K3 Premium Gaming",
         "price": "551.000đ",
         "details": [
             " Bàn Phím Kết nối K3 nhanh chóng và ổn định trực tiếp với máy tính thông qua cổng USB type-C để đem trải nghiệm mượt mà và tối ưu nhất.",
@@ -680,7 +680,7 @@
     {
         "id": "50",
         "image": "https://salt.tikicdn.com/cache/750x750/ts/product/bf/f8/a8/b2ea5c68915acfeacacdc16e8aa5ebed.jpg.webp",
-        "name": "Bàn Phím Cơ Gaming Cao Cấp XSmart K1 - Hàng Chính Hãng",
+        "name": "Bàn Phím Cơ Gaming Cao Cấp XSmart K1",
         "price": "599.000đ",
         "details": [
             "Phím êm ái, phản hồi nhanh và có chức năng Anti-Ghosting",
