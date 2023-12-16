@@ -5,7 +5,7 @@ import { Context } from './ReactContext';
 import Comments from './Comments';
 function ProductInfo() {
   const { id } = useParams();
-  const { products, productsInCart, setProductsInCart, isLoggedIn } = useContext(Context);
+  const { products, productsInCart, setProductsInCart, isLoggedIn, setNumberOfProductsInCart } = useContext(Context);
   const [isInCart, setIsInCart] = useState(false)
   const [quantity, setQuantity] = useState(0);
 
@@ -33,6 +33,7 @@ function ProductInfo() {
     ]
     setProductsInCart(newProductsInCart);
     setIsInCart(prev => !prev)
+    setNumberOfProductsInCart(prev => prev + 1)
     window.alert('Thêm vào giỏ hàng thành công');
   }
   function handleBuy() {

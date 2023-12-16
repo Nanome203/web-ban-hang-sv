@@ -114,3 +114,21 @@
    background-color: rgb(3, 174, 231);
    border-radius: 10px;
 }
+
+.counter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   font-size: 14px;
+   z-index: 0;
+   position: absolute;
+   background-color: white;
+   top: -12px;
+   left: 15px;
+   color: white;
+   background-color: red;
+}

@@ -18,7 +18,8 @@ function App() {
   const [products, setProducts] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [productsInCart, setProductsInCart] = useState([]);
-  const values = { products, isLoggedIn, setIsLoggedIn, productsInCart, setProductsInCart };
+  const [numberOfProductsInCart, setNumberOfProductsInCart] = useState(0)
+  const values = { products, isLoggedIn, setIsLoggedIn, productsInCart, setProductsInCart, numberOfProductsInCart, setNumberOfProductsInCart };
   useEffect(() => {
     // Hàm này sẽ chạy sau khi component được mount
     const fetchProducts = async () => {

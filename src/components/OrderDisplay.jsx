@@ -3,11 +3,12 @@ import styles from '../componentsCSS/OrderDisplay.module.css'
 import { Context } from './ReactContext'
 
 function ItemTag({ id, image, name, quantity, totalMoney, orignalPrice }) {
-  const { productsInCart, setProductsInCart } = useContext(Context)
+  const { productsInCart, setProductsInCart, setNumberOfProductsInCart } = useContext(Context)
   const [quantityDisplay, setQuantityDisplay] = useState(quantity)
   function deleteItem() {
     let newProductsInCart = productsInCart.filter((product) => product.id !== id)
     setProductsInCart(newProductsInCart)
+    setNumberOfProductsInCart(prev => prev - 1)
   }
 
   function updateQuantity(e) {
