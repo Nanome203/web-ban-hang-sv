@@ -7,6 +7,7 @@ function ProductInfo() {
   const { id } = useParams();
   const { products } = useContext(Context);
   const [quantity, setQuantity] = useState(0);
+  console.log(3, 200, 123 * 2)
   function handleQuantityChange(e) {
     setQuantity(e.target.value);
   }
@@ -53,7 +54,7 @@ function ProductInfo() {
               <i className={`fa-solid fa-star ${styles.iconSize}`}></i>
               (3)
             </p>
-            <h2 style={{ color: 'red' }}>{product.price}</h2>
+            <h2 style={{ color: 'red' }}>{parseInt(product.price).toLocaleString()} VND</h2>
           </div>
           <div className={styles.quarantine}>
             <h3 style={{ color: 'green' }}><i className="fa-solid fa-receipt" style={{ marginRight: '10px' }}></i>Thông tin bảo hành: </h3>
@@ -80,7 +81,7 @@ function ProductInfo() {
             <input type="text" value={quantity} onChange={handleQuantityChange} />
             <button onClick={increaseQuantity}>+</button>
           </div>
-          <p className={styles.p1_sale} id="total-price">Tạm tính: {quantity === 0 ? 0 : (quantity * parseFloat(product.price)).toFixed(3)}đ
+          <p className={styles.p1_sale} id="total-price">Tạm tính: {quantity === 0 ? 0 : (quantity * parseInt(product.price)).toLocaleString()}đ
           </p>
           <div>
             <button className={styles.buy_btn}>Mua ngay</button>

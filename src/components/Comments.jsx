@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import styles from '../componentsCSS/Comments.module.css'
 import { Context } from './ReactContext'
 
-const customers = [{
+const Customers = [{
   name: '21522712 - Phạm Minh Triết',
   stars: 5,
   comment: 'Rất tốt',
@@ -58,15 +58,17 @@ function CommentTag(props) {
 }
 function Comments() {
   const { isLoggedIn } = useContext(Context)
+  const [customers, setCustomers] = useState([...Customers])
   return (
     <div className={styles.comment_Container}>
       <div className={styles.comment_Area}>
         <h1>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h1>
         <hr />
+        <p style={{ fontSize: '30px', textAlign: 'center', marginTop: '10px' }}>Vui lòng <strong>đăng nhập</strong> để đánh giá</p>
         {
           customers.map((customer, index) => <CommentTag {...customer} key={index} />)
         }
-        <p style={{ fontSize: '30px', textAlign: 'center' }}>Vui lòng <strong>đăng nhập</strong> để đánh giá</p>
+
 
       </div>
     </div>

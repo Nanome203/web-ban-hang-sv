@@ -31,7 +31,7 @@ function OneProductFrame(props) {
           alt='error getting pics'
           style={{ width: '200px', height: '200px', objectFit: 'contain' }} />
         <p className={styles.productName}>{props.name}</p>
-        <p className={styles.price}>{props.price}</p>
+        <p className={styles.price}>{parseInt(props.price).toLocaleString()} VND</p>
         <p className={styles.rating}>
           <i className={`fa-solid fa-star ${styles.iconSize}`}></i>
           <i className={`fa-solid fa-star ${styles.iconSize}`}></i>
