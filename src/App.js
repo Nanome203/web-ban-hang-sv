@@ -28,7 +28,6 @@ function App() {
 
         // Lấy dữ liệu từ phản hồi và cập nhật state
         setProducts(response.data);
-        console.log(products);
       } catch (error) {
         console.error("Error fetching product data:", error);
       }

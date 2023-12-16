@@ -25,10 +25,10 @@ const Customers = [{
 function StarsDrawer({ numOfStars }) {
   let stars = []
   for (let i = 0; i < numOfStars; ++i) {
-    stars.push(<i className={`fa-solid fa-star ${styles.iconSize}`}></i>)
+    stars.push(<i className={`fa-solid fa-star ${styles.iconSize}`} key={i}></i>)
   }
-  for (let i = 0; i < 5 - numOfStars; ++i) {
-    stars.push(<i className={`fa-regular fa-star ${styles.iconSize}`}></i>)
+  for (let i = numOfStars; i < 5; ++i) {
+    stars.push(<i className={`fa-regular fa-star ${styles.iconSize}`} key={i}></i>)
   }
   return (
     <>

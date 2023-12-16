@@ -75,7 +75,7 @@ function ProductInfo() {
               alt='UIT Icon' />
             <p className={styles.p_sale}>TRƯỜNG ĐẠI HỌC CNTT <br /> ĐHQG TPHCM</p>
             <br />
-            <hr style={{ width: '300px', margin: '0 auto' }} />
+            <hr style={{ width: '70%', margin: '0 auto' }} />
           </div>
           <div className={styles.box_quantity}>
             <label>Số lượng:</label>
