@@ -141,6 +141,7 @@
 
 .box_quantity input {
   text-align: center;
+  outline: none;
 }
 
 .imageInfo img {

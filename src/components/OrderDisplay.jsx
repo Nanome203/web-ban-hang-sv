@@ -1,20 +1,48 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import styles from '../componentsCSS/OrderDisplay.module.css'
 import { Context } from './ReactContext'
 
 function ItemTag({ id, image, name, quantity, totalMoney, orignalPrice }) {
   const { productsInCart, setProductsInCart } = useContext(Context)
+  const [quantityDisplay, setQuantityDisplay] = useState(quantity)
   function deleteItem() {
     let newProductsInCart = productsInCart.filter((product) => product.id !== id)
     setProductsInCart(newProductsInCart)
   }
 
+  function updateQuantity(e) {
+    let value = parseInt(e.target.value)
+    if (e.target.value === '') {
+      setQuantityDisplay(e.target.value)
+      return
+    }
+    if (isNaN(value)) {
+      window.alert('Vui lòng nhập số dương')
+      setQuantityDisplay(prev => prev)
+      return
+    }
+    else if (value === 0) {
+      deleteItem()
+      return
+    }
+
+    let newQuantity = value;
+    setQuantityDisplay(newQuantity)
+    let newProductsInCart = productsInCart.map(product => {
+      if (product.id === id) {
+        return { ...product, quantity: newQuantity, totalMoney: (newQuantity * parseInt(product.orignalPrice)).toLocaleString() }
+      }
+      return product;
+    })
+    setProductsInCart(newProductsInCart)
+  }
   function decreaseQuantity() {
     if (quantity === 1) {
       deleteItem()
       return
     }
     let newQuantity = quantity - 1;
+    setQuantityDisplay(newQuantity)
     let newProductsInCart = productsInCart.map(product => {
       if (product.id === id) {
         return { ...product, quantity: newQuantity, totalMoney: (newQuantity * parseInt(product.orignalPrice)).toLocaleString() }
@@ -27,6 +55,7 @@ function ItemTag({ id, image, name, quantity, totalMoney, orignalPrice }) {
 
   function increaseQuantity() {
     let newQuantity = quantity + 1;
+    setQuantityDisplay(newQuantity)
     let newProductsInCart = productsInCart.map(product => {
       if (product.id === id) {
         return { ...product, quantity: newQuantity, totalMoney: (newQuantity * parseInt(product.orignalPrice)).toLocaleString() }
@@ -51,7 +80,7 @@ function ItemTag({ id, image, name, quantity, totalMoney, orignalPrice }) {
         </div>
         <div className={styles.updateButtons}>
           <button onClick={decreaseQuantity}>-</button>
-          <div className={styles.quantityDisplay}>{quantity}</div>
+          <input type="text" className={styles.quantityDisplay} value={quantityDisplay} onChange={updateQuantity} />
           <button onClick={increaseQuantity}>+</button>
           <div className={styles.deleteButton} onClick={deleteItem}><i className="fa-solid fa-x"></i></div>
 

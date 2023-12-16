@@ -40,7 +40,17 @@ function ProductInfo() {
       window.alert('Vui lòng đăng nhập trước khi mua')
   }
   function handleQuantityChange(e) {
-    setQuantity(e.target.value);
+    let value = parseInt(e.target.value)
+    if (e.target.value === '') {
+      setQuantity(e.target.value)
+      return
+    }
+    if (isNaN(value)) {
+      window.alert('Vui lòng nhập số dương')
+      setQuantity(prev => prev)
+      return
+    }
+    setQuantity(value);
   }
   function decreaseQuantity() {
     if (quantity === 0)
