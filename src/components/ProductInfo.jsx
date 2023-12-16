@@ -6,6 +6,7 @@ import Comments from './Comments';
 function ProductInfo() {
   const { id } = useParams();
   const { products, productsInCart, setProductsInCart, isLoggedIn } = useContext(Context);
+  const [isInCart, setIsInCart] = useState(false)
   const [quantity, setQuantity] = useState(0);
 
   function addToCart() {
@@ -17,15 +18,21 @@ function ProductInfo() {
       window.alert('Vui lòng chọn số lượng')
       return
     }
+    else if (isInCart) {
+      window.alert('Sản phẩm đã ở trong giỏ hàng')
+      return
+    }
     let newProductsInCart = [...productsInCart, {
       id: id,
       image: product.image,
       name: product.name,
       quantity: quantity,
-      totalMoney: (quantity * parseInt(product.price)).toLocaleString()
+      totalMoney: (quantity * parseInt(product.price)).toLocaleString(),
+      orignalPrice: product.price
     }
     ]
     setProductsInCart(newProductsInCart);
+    setIsInCart(prev => !prev)
     window.alert('Thêm hàng vào giỏ hàng thành công');
   }
   function handleBuy() {
@@ -108,7 +115,7 @@ function ProductInfo() {
             <input type="text" value={quantity} onChange={handleQuantityChange} />
             <button onClick={increaseQuantity}>+</button>
           </div>
-          <p className={styles.p1_sale} id="total-price">Tạm tính: {quantity === 0 ? 0 : (quantity * parseInt(product.price)).toLocaleString()}đ
+          <p className={styles.p1_sale} id="total-price">Tạm tính: {quantity === 0 ? 0 : (quantity * parseInt(product.price)).toLocaleString()} VND
           </p>
           <div>
             <button className={styles.buy_btn} onClick={handleBuy}>Mua ngay</button>

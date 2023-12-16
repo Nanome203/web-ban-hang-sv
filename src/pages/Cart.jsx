@@ -1,10 +1,29 @@
 import React, { useContext } from 'react'
 import { Context } from '../components/ReactContext'
 import OrderDisplay from '../components/OrderDisplay'
+import styles from '../componentsCSS/TotalMoneyBar.module.css'
 
+function TotalMoneyBar() {
+  const { productsInCart } = useContext(Context)
+  let totalAmountOfMoney = 0;
+  if (productsInCart.length !== 0) {
+    productsInCart.forEach(element => {
+      totalAmountOfMoney = totalAmountOfMoney + parseInt(element.totalMoney.replace(/\D/g, ''));
+    });
+  }
+  return (
+    <div className={styles.moneyBar}>
+      <h1>Tổng giá tiền đơn hàng: <span style={{ color: 'red' }}>{totalAmountOfMoney.toLocaleString()} VND</span></h1>
+      <div className={styles.buttonContainer}>
+        <button>Thanh toán</button>
+      </div>
+    </div>
+  )
+
+}
 function Cart() {
   const { isLoggedIn } = useContext(Context)
-  const { productsInCart, setProductsInCart } = useContext(Context)
+  const { productsInCart } = useContext(Context)
   if (!isLoggedIn) {
     return (
       <div style={{ height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -20,7 +39,14 @@ function Cart() {
     )
   }
   return (
-    <OrderDisplay />
+    <>
+      <OrderDisplay />
+      {
+        productsInCart.length === 0 ? <></> : <TotalMoneyBar />
+
+      }
+    </>
+
   )
 }
 
