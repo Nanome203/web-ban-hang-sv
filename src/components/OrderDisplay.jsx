@@ -23,7 +23,8 @@ function ItemTag({ id, image, name, quantity, totalMoney, orignalPrice }) {
       return
     }
     else if (value === 0) {
-      deleteItem()
+      setQuantityDisplay(0)
+      setTimeout(() => deleteItem(), 765)
       return
     }
 
