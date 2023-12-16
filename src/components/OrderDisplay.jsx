@@ -1,17 +1,15 @@
 import React, { useContext } from 'react'
 import styles from '../componentsCSS/OrderDisplay.module.css'
 import { Context } from './ReactContext'
-import { useNavigate } from 'react-router-dom'
 
 function ItemTag({ id, image, name, quantity, totalMoney }) {
-  const { productsInCart, setProductsInCart, setIsLoggedIn } = useContext(Context)
-  const navigation = useNavigate()
+  const { productsInCart, setProductsInCart } = useContext(Context)
   function deleteItem() {
     let newProductsInCart = productsInCart.filter((product) => product.id !== id)
-    if (newProductsInCart.length === 0) {
-      setIsLoggedIn(true)
-      navigation('/cart')
-    }
+    // if (newProductsInCart.length === 0) {
+    //   setIsLoggedIn(true)
+    //   navigation('/cart')
+    // }
     setProductsInCart(newProductsInCart)
   }
 
@@ -38,7 +36,7 @@ function ItemTag({ id, image, name, quantity, totalMoney }) {
   )
 }
 function OrderDisplay() {
-  const { productsInCart, setProductsInCart } = useContext(Context)
+  const { productsInCart } = useContext(Context)
   return (
     <div className={styles.orderContainer}>
       {

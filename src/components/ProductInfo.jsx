@@ -28,6 +28,10 @@ function ProductInfo() {
     setProductsInCart(newProductsInCart);
     window.alert('Thêm hàng vào giỏ hàng thành công');
   }
+  function handleBuy() {
+    if (!isLoggedIn)
+      window.alert('Vui lòng đăng nhập trước khi mua')
+  }
   function handleQuantityChange(e) {
     setQuantity(e.target.value);
   }
@@ -107,11 +111,11 @@ function ProductInfo() {
           <p className={styles.p1_sale} id="total-price">Tạm tính: {quantity === 0 ? 0 : (quantity * parseInt(product.price)).toLocaleString()}đ
           </p>
           <div>
-            <button className={styles.buy_btn}>Mua ngay</button>
+            <button className={styles.buy_btn} onClick={handleBuy}>Mua ngay</button>
             <br />
             <button className={styles.add_to_cart_btn} onClick={addToCart}>Thêm vào giỏ hàng</button>
             <br />
-            <button className={styles.buy_first_pay_later_btn}>Mua trước trả sau</button>
+            <button className={styles.buy_first_pay_later_btn} onClick={handleBuy}>Mua trước trả sau</button>
           </div>
         </div>
       </div>

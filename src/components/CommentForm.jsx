@@ -81,11 +81,12 @@ function CommentForm({ onSubmit, customers }) {
     else if (numberOfStars === 0) {
       setResult('Vui lòng chọn đánh giá sao cho chúng tôi')
     }
-    else if (comment === '') {
-      setResult('Vui lòng điền đánh giá')
-    }
+    // else if (comment === '') {
+    //   setResult('Vui lòng điền đánh giá')
+    // }
     else {
       let newCustomers = [{
+        img: 'https://bicolandiatravels.com/wp-content/uploads/2022/07/blank-profile-picture-mystery-man-avatar-973460.png',
         name: 'Admin',
         stars: numberOfStars,
         comment: comment,
