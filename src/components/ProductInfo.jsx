@@ -33,7 +33,7 @@ function ProductInfo() {
     ]
     setProductsInCart(newProductsInCart);
     setIsInCart(prev => !prev)
-    window.alert('Thêm hàng vào giỏ hàng thành công');
+    window.alert('Thêm vào giỏ hàng thành công');
   }
   function handleBuy() {
     if (!isLoggedIn)
