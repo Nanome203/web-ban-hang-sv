@@ -92,9 +92,10 @@ function CommentForm({ onSubmit, customers }) {
         date: date
       }, ...customers]
       onSubmit(newCustomers)
-      setResult('')
+      setResult('Gửi đánh giá thành công')
       setNumberOfStars(0);
-      setComment('')
+      setComment('');
+      setTimeout(() => setResult(''), 3000)
     }
   }
   return (
