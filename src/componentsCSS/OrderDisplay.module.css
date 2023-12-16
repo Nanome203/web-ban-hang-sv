@@ -49,12 +49,16 @@
   height: 4cm;
   /* border: black solid 1px; */
   display: flex;
+  gap: 10px;
   justify-content: center;
   flex-direction: column;
 
 }
 
-
+.Info p {
+  font-size: 17px;
+  font-style: italic;
+}
 
 .updateButtons {
   width: 6cm;

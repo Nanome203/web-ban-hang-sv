@@ -75,7 +75,7 @@ function ItemTag({ id, image, name, quantity, totalMoney, orignalPrice }) {
       </div>
       <div className={styles.productInfoDetails}>
         <div className={styles.Info}>
-          <h1>{name}</h1>
+          <h2>{name}</h2>
           <p>Giá sản phẩm: {parseInt(orignalPrice).toLocaleString()} VND</p>
           <p>Số lượng: {quantity}</p>
           <p>Tổng giá tiền: {totalMoney} VND</p>
