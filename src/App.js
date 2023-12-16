@@ -17,6 +17,8 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 function App() {
   const [products, setProducts] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [productsInCart, setProductsInCart] = useState([]);
+  const values = { products, isLoggedIn, setIsLoggedIn, productsInCart, setProductsInCart };
   useEffect(() => {
     // Hàm này sẽ chạy sau khi component được mount
     const fetchProducts = async () => {
@@ -38,7 +40,7 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // [] đảm bảo useEffect chỉ chạy một lần sau khi component được mount
   return (
-    <Context.Provider value={{ products, isLoggedIn, setIsLoggedIn }}>
+    <Context.Provider value={values}>
       <BrowserRouter>
         <ScrollToTop>
           <Routes>

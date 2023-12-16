@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.orderContainer {
+  width: 30cm;
+  /* height: 300px; */
+  /* border: black solid 1px; */
+  margin: 0 auto;
+}
+
+.itemTag {
+  margin: 10px;
+  height: 4cm;
+  /* border: black solid 1px; */
+  border-radius: 10px;
+  display: flex;
+  background-color: white;
+}
+
+.productImage {
+  width: 4cm;
+  height: 4cm;
+  /* border: black solid 1px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage img {
+  width: 80%;
+  height: 80%;
+  border: lightgray solid 5px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.productInfoDetails {
+  width: 26cm;
+  height: 4cm;
+  /* border: black solid 1px; */
+  display: flex;
+}
+
+.Info {
+  width: 20cm;
+  height: 4cm;
+  /* border: black solid 1px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+
+
+.updateButtons {
+  width: 6cm;
+  height: 4cm;
+  /* border: black solid 1px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.updateButtons button,
+.quantityDisplay {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.quantityDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+  border-radius: 10px;
+}
+
+.deleteButton {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}

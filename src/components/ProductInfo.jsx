@@ -5,8 +5,29 @@ import { Context } from './ReactContext';
 import Comments from './Comments';
 function ProductInfo() {
   const { id } = useParams();
-  const { products } = useContext(Context);
+  const { products, productsInCart, setProductsInCart, isLoggedIn } = useContext(Context);
   const [quantity, setQuantity] = useState(0);
+
+  function addToCart() {
+    if (!isLoggedIn) {
+      window.alert('Vui lòng đăng nhập để thêm vào giỏ hàng')
+      return
+    }
+    else if (isLoggedIn && quantity === 0) {
+      window.alert('Vui lòng chọn số lượng')
+      return
+    }
+    let newProductsInCart = [...productsInCart, {
+      id: id,
+      image: product.image,
+      name: product.name,
+      quantity: quantity,
+      totalMoney: (quantity * parseInt(product.price)).toLocaleString()
+    }
+    ]
+    setProductsInCart(newProductsInCart);
+    window.alert('Thêm hàng vào giỏ hàng thành công');
+  }
   function handleQuantityChange(e) {
     setQuantity(e.target.value);
   }
@@ -88,7 +109,7 @@ function ProductInfo() {
           <div>
             <button className={styles.buy_btn}>Mua ngay</button>
             <br />
-            <button className={styles.add_to_cart_btn}>Thêm vào giỏ hàng</button>
+            <button className={styles.add_to_cart_btn} onClick={addToCart}>Thêm vào giỏ hàng</button>
             <br />
             <button className={styles.buy_first_pay_later_btn}>Mua trước trả sau</button>
           </div>
