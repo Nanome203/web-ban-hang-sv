@@ -7,7 +7,6 @@ function ProductInfo() {
   const { id } = useParams();
   const { products } = useContext(Context);
   const [quantity, setQuantity] = useState(0);
-  console.log(3, 200, 123 * 2)
   function handleQuantityChange(e) {
     setQuantity(e.target.value);
   }

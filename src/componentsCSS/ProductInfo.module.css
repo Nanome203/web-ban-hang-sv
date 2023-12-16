@@ -80,7 +80,7 @@
 .add_to_cart_btn,
 .buy_first_pay_later_btn {
   display: block;
-  width: 300px;
+  width: 70%;
   height: 50px;
   margin: 0 auto;
   cursor: pointer;
