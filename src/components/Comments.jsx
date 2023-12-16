@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import styles from '../componentsCSS/Comments.module.css'
 import { Context } from './ReactContext'
+import CommentForm from './CommentForm'
 
 const Customers = [{
   name: '21522712 - Phạm Minh Triết',
@@ -8,15 +9,15 @@ const Customers = [{
   comment: 'Rất tốt',
   date: '12/01/2018'
 }, {
-  name: 'Hai',
-  stars: 4,
+  name: '21522747 - Trịnh Tuấn Tú',
+  stars: 5,
   comment: 'OK',
   date: '12/01/2018'
 
 }, {
-  name: 'Ba',
-  stars: 3,
-  comment: 'Tạm ổn',
+  name: '21522556 - Phạm Thanh Sơn',
+  stars: 5,
+  comment: 'Xài ngon',
   date: '12/01/2018'
 
 }
@@ -58,13 +59,16 @@ function CommentTag(props) {
 }
 function Comments() {
   const { isLoggedIn } = useContext(Context)
-  const [customers, setCustomers] = useState([...Customers])
+  const [customers, setCustomers] = useState(Customers)
   return (
     <div className={styles.comment_Container}>
       <div className={styles.comment_Area}>
         <h1>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h1>
         <hr />
-        <p style={{ fontSize: '30px', textAlign: 'center', marginTop: '10px' }}>Vui lòng <strong>đăng nhập</strong> để đánh giá</p>
+        {
+          !isLoggedIn ? <p style={{ fontSize: '30px', textAlign: 'center', marginTop: '10px' }}>Vui lòng <strong>đăng nhập</strong> để đánh giá</p> :
+            <CommentForm onSubmit={setCustomers} customers={customers} />
+        }
         {
           customers.map((customer, index) => <CommentTag {...customer} key={index} />)
         }

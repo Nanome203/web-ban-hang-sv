@@ -71,6 +71,9 @@ function ProductInfo() {
         </div>
         <div className={styles.transaction}>
           <div>
+            <img className={styles.Icon}
+              src='https://cdn.haitrieu.com/wp-content/uploads/2021/10/Logo-DH-Cong-Nghe-Thong-Tin-UIT.png'
+              alt='UIT Icon' />
             <p className={styles.p_sale}>TRƯỜNG ĐẠI HỌC CNTT <br /> ĐHQG TPHCM</p>
             <br />
             <hr style={{ width: '300px', margin: '0 auto' }} />

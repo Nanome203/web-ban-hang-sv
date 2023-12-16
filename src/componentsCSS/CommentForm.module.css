@@ -2,3 +2,58 @@
   padding: 0;
   margin: 0;
 }
+
+.formContainer {
+  height: 400px;
+  margin: 30px 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.iconSize {
+  color: gold;
+  font-size: 30px;
+}
+
+.starContainer {
+  margin-top: 10px;
+}
+
+.formContainer textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  margin-top: 10px;
+}
+
+.formContainer textarea::placeholder {
+  font-size: 17px;
+  ;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formContainer button {
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.formContainer button:hover {
+  background-color: rgb(197, 3, 3);
+}
+
+.formContainer button:hover:active {
+  background-color: rgb(231, 3, 3);
+}
