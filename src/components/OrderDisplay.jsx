@@ -53,7 +53,7 @@ function ItemTag({ id, image, name, quantity, totalMoney, orignalPrice }) {
           <button onClick={decreaseQuantity}>-</button>
           <div className={styles.quantityDisplay}>{quantity}</div>
           <button onClick={increaseQuantity}>+</button>
-          <div className={styles.deleteButton} onClick={deleteItem}>X</div>
+          <div className={styles.deleteButton} onClick={deleteItem}><i className="fa-solid fa-x"></i></div>
 
         </div>
       </div>

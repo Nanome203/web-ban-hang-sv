@@ -15,7 +15,7 @@ function TotalMoneyBar() {
     <div className={styles.moneyBar}>
       <h1>Tổng giá tiền đơn hàng: <span style={{ color: 'red' }}>{totalAmountOfMoney.toLocaleString()} VND</span></h1>
       <div className={styles.buttonContainer}>
-        <button>Thanh toán</button>
+        <button>Đặt hàng</button>
       </div>
     </div>
   )
