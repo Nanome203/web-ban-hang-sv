@@ -1,6 +1,7 @@
 import React from 'react'
 import SideBar from '../components/SideBar'
 import { Outlet } from 'react-router-dom'
+import Footer from '../components/Footer'
 function SideBarLayout() {
   return (
     <>
@@ -8,9 +9,10 @@ function SideBarLayout() {
         <SideBar />
         <div id='contentBody' style={{ width: '80%', height: '100%' }}>
           <Outlet />
+          <Footer />
         </div>
       </div>
-      <footer></footer>
+
     </>
   )
 }
