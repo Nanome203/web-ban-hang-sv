@@ -32,6 +32,27 @@
 
 }
 
+.showMoreBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    outline: none;
+    border: gray solid 1px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.showMoreBtn:hover {
+    background-color: lightgray;
+}
+
+.showMoreBtn:hover:active {
+    background-color: rgb(231, 230, 230);
+}
+
 @media only screen and (min-width: 500px) {
     .gridContainer {
         grid-template-columns: 1fr;
