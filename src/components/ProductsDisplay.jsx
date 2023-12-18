@@ -25,7 +25,7 @@ function ProductsDisplay({ title }) {
         ))}
       </div>
       {visible === products.length ?
-        <button className={styles.showMoreBtn} onClick={handleHide}>Ẩn bớt</button> :
+        <button className={styles.showMoreBtn} onClick={handleHide} style={{ marginTop: '100px' }}>Ẩn bớt</button> :
         <button className={styles.showMoreBtn} onClick={handleDisplay}>Xem thêm</button>}
 
     </div>
