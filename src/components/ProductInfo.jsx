@@ -5,8 +5,7 @@ import { Context } from './ReactContext';
 import Comments from './Comments';
 function ProductInfo() {
   const { id } = useParams();
-  const { products, productsInCart, setProductsInCart, isLoggedIn, setNumberOfProductsInCart } = useContext(Context);
-  const [isInCart, setIsInCart] = useState(false)
+  const { products, productsInCart, setProductsInCart, isLoggedIn, setNumberOfProductsInCart, inCartOrNot, setInCartOrNot } = useContext(Context);
   const [quantity, setQuantity] = useState(0);
 
   function addToCart() {
@@ -14,14 +13,15 @@ function ProductInfo() {
       window.alert('Vui lòng đăng nhập để thêm vào giỏ hàng')
       return
     }
+    else if (inCartOrNot[id]) {
+      window.alert('Sản phẩm đã ở trong giỏ hàng')
+      return
+    }
     else if (isLoggedIn && quantity === 0) {
       window.alert('Vui lòng chọn số lượng')
       return
     }
-    else if (isInCart) {
-      window.alert('Sản phẩm đã ở trong giỏ hàng')
-      return
-    }
+
     let newProductsInCart = [...productsInCart, {
       id: id,
       image: product.image,
@@ -32,7 +32,8 @@ function ProductInfo() {
     }
     ]
     setProductsInCart(newProductsInCart);
-    setIsInCart(prev => !prev)
+    let newInCartOrNot = { ...inCartOrNot, [id]: true }
+    setInCartOrNot(newInCartOrNot)
     setNumberOfProductsInCart(prev => prev + 1)
     window.alert('Thêm vào giỏ hàng thành công');
   }

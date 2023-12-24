@@ -19,7 +19,18 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [productsInCart, setProductsInCart] = useState([]);
   const [numberOfProductsInCart, setNumberOfProductsInCart] = useState(0)
-  const values = { products, isLoggedIn, setIsLoggedIn, productsInCart, setProductsInCart, numberOfProductsInCart, setNumberOfProductsInCart };
+  const [inCartOrNot, setInCartOrNot] = useState([])
+  const values = {
+    products,
+    isLoggedIn,
+    setIsLoggedIn,
+    productsInCart,
+    setProductsInCart,
+    numberOfProductsInCart,
+    setNumberOfProductsInCart,
+    inCartOrNot,
+    setInCartOrNot
+  };
   useEffect(() => {
     // Hàm này sẽ chạy sau khi component được mount
     const fetchProducts = async () => {
@@ -40,6 +51,20 @@ function App() {
     fetchProducts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // [] đảm bảo useEffect chỉ chạy một lần sau khi component được mount
+
+
+  useEffect(() => {
+    if (products) {
+      let isInCartOrNot = {}
+      for (let i = 0; i < products.length; ++i) {
+        isInCartOrNot = { ...isInCartOrNot, [products[i].id]: false }
+      }
+      setInCartOrNot(isInCartOrNot)
+      console.log(isInCartOrNot)
+    }
+  }, [products])
+
+
   return (
     <Context.Provider value={values}>
       <BrowserRouter>
