@@ -23,28 +23,21 @@ function SlideShow() {
       <Slider {...settings}>
         <div className={styles.slider_item}>
           <img
-            src="https://techuda.com/wp-content/uploads/2021/05/SworD-1.png"
+            src={require("../images/asus-rog-rtx-its-on-promo-01.jpg")}
             alt=""
           />
         </div>
 
         <div className={styles.slider_item}>
           <img
-            src="https://www.willwork4games.net/wp-content/uploads/2019/03/asus-rog-rtx-its-on-promo-01.jpg"
+            src={require("../images/maxresdefault.jpg")}
             alt=""
           />
         </div>
 
         <div className={styles.slider_item}>
           <img
-            src="https://i.ytimg.com/vi/LZQKqvpdA4M/maxresdefault.jpg"
-            alt=""
-          />
-        </div>
-
-        <div className={styles.slider_item}>
-          <img
-            src="https://cdn.mos.cms.futurecdn.net/RJVLR7HsKHDSGqHMp9iXKW.jpg"
+            src={require("../images/RJVLR7HsKHDSGqHMp9iXKW.jpg")}
             alt=""
           />
         </div>
