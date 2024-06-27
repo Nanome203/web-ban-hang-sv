@@ -24,13 +24,13 @@ function LogInForm() {
     else if (pass === '') {
       window.alert('Vui lòng nhập mật khẩu')
     }
-    else if (mssv === 'admin' && pass === 'admin') {
+    else if (mssv === '00000000' && pass === 'admin') {
       setIsLoggedIn(true)
       window.alert('Đăng nhập thành công');
       navigate('/')
     }
     else {
-      window.alert('Đăng nhập thất bại do Database không tồn tại');
+      window.alert('Mã số sinh viên hoặc mật khẩu sai');
     }
   }
   return (
